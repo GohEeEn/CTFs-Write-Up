@@ -1,0 +1,16 @@
+# Writeup base #
+*flag.txt
+
+# Disallowed File Types #
+*.ovpn
+*.deb
+*.apng
+*.vmem
+hydra.restore
+
+# Challenge specific
+
+## HackyHoliday2021 ##
+*volatility*
+HackyHoliday2021/stego/Unidentified_Graphics_Object/src/apngframe*
+
