@@ -1,14 +1,12 @@
 # Locked Out
 
-## Categories
-
-cloud
-
-## Challenge Information
-
 After a relaxing space walk, you realize that you have been locked out of your spaceship by the spaceship's AI. Thankfully, you remember that you prepared for this eventuality by storing access keys in an external storage.
 
 Also see our webinar on cloud security [part 1](https://youtu.be/J7_m-Xmdkxs) and [part 2](https://youtu.be/MKZ74wy3Sf8) for a primer on cloud security and hacking.
+
+## Category
+
+cloud
 
 ## Task 1 - Obtaining external access keys (25 points)
 
