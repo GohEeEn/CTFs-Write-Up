@@ -10,8 +10,6 @@ web
 
 ## Task 1 - Identify yourself (50 points)
 
-### Description
-
 Open the [flag designer](https://portal.hackazon.org/#!/flagdesigner) and see if you can hack your way into the admin base.
 
 Note: Only the URL <https://portal.hackazon.org/flagdesigner> and its sub-URLs are part of the teaser challenge.

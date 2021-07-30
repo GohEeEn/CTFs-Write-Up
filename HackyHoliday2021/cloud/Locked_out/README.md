@@ -10,8 +10,6 @@ cloud
 
 ## Task 1 - Obtaining external access keys (25 points)
 
-### Description
-
 Open the [external storage](https://external-spaceship-storage-b38e8c6.s3-eu-west-1.amazonaws.com/) and see if there is something useful in there.
 
 ### Write Up
@@ -24,6 +22,10 @@ Open the [external storage](https://external-spaceship-storage-b38e8c6.s3-eu-wes
 3. In this text file, you are able to find the Access Key ID, Secret Access Key, and the first flag
 
 ## Task 2 - Checking your internal storage (25 points)
+
+You have managed to get keys. See if you can get inside and check the internal spaceship storage.
+
+### Write Up
 
 1. Download [awscli](https://aws.amazon.com/cli/) and launch the command `aws configure`, to authenticate by providing those information mentioned above
 

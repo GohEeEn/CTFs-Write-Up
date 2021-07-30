@@ -8,8 +8,6 @@ reversing
 
 ## Task 1 - BowShock
 
-### Description
-
 Can you find out how to minimize bow shock and prevent everything from turning into dust?
 
 ### Write Up
