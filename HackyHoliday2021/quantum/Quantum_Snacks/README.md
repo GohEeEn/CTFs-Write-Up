@@ -6,7 +6,7 @@ quantum
 
 ## Write Up
 
-### Task 1
+### Task 1 - How many states?
 
 1. X(1, 0) = (0, 1)
 2. Z(1, 0) = (1, 0)
@@ -17,20 +17,23 @@ quantum
 7. X x sqrt(2) x (1, -1) = sqrt(2) x (-1, 1)
 8. Z x sqrt(2) x (-1, 1) = sqrt(2) x (-1, -1)
 
-H x sqrt(2) x (1, 1) = (1, 0)
-H x sqrt(2) x (1, -1) = (0, 1)
-H x sqrt(2) x (-1, 1) = (0, -1)
-H x sqrt(2) x (-1, -1) = (-1, 0)
+    ```text
+    # Repeated
+    H x sqrt(2) x (1, 1) = (1, 0)
+    H x sqrt(2) x (1, -1) = (0, 1)
+    H x sqrt(2) x (-1, 1) = (0, -1)
+    H x sqrt(2) x (-1, -1) = (-1, 0)
+    ```
 
--> __8__ different states
+Thus, we can conclude that there are __8__ different states
 
-### Task 2 (H and X gate only)
+### Task 2 (H and X gate only) - Make a circuit
 
 Given : (0, 1) -> (-1, 0)
 
 Operations = __XHXHX__
 
-### Task 3 (H, X and Z gate in the __shortest__ steps)
+### Task 3 (H, X and Z gate in the __shortest__ steps) - Short circuit
 
 Given : (0, 1) -> (-1, 0)
 
