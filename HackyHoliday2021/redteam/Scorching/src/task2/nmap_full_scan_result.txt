@@ -1,0 +1,69 @@
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-08-02 12:48 IST
+Nmap scan report for 10.6.0.2
+Host is up (0.090s latency).
+Not shown: 979 closed ports
+PORT      STATE SERVICE            VERSION
+22/tcp    open  ssh                OpenSSH 7.1 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 c2:a3:4a:ac:ee:a4:74:b8:e3:f7:75:92:8c:5d:16:67 (RSA)
+|_  521 4e:c8:57:87:f8:04:04:ae:36:c8:ee:74:17:4e:e9:95 (ECDSA)
+53/tcp    open  domain             Simple DNS Plus
+88/tcp    open  kerberos-sec       Microsoft Windows Kerberos (server time: 2021-08-02 11:48:34Z)
+135/tcp   open  msrpc              Microsoft Windows RPC
+139/tcp   open  netbios-ssn        Microsoft Windows netbios-ssn
+389/tcp   open  ldap               Microsoft Windows Active Directory LDAP (Domain: insecureAD.local, Site: HQ)
+445/tcp   open  microsoft-ds       Windows Server 2012 R2 Standard Evaluation 9600 microsoft-ds (workgroup: insecureAD)
+464/tcp   open  kpasswd5?
+593/tcp   open  ncacn_http         Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  tcpwrapped
+3268/tcp  open  ldap               Microsoft Windows Active Directory LDAP (Domain: insecureAD.local, Site: HQ)
+3269/tcp  open  tcpwrapped
+3389/tcp  open  ssl/ms-wbt-server?
+| rdp-ntlm-info: 
+|   Target_Name: insecureAD
+|   NetBIOS_Domain_Name: insecureAD
+|   NetBIOS_Computer_Name: DC1
+|   DNS_Domain_Name: insecureAD.local
+|   DNS_Computer_Name: DC1.insecureAD.local
+|   DNS_Tree_Name: insecureAD.local
+|   Product_Version: 6.3.9600
+|_  System_Time: 2021-08-02T11:49:39+00:00
+| ssl-cert: Subject: commonName=DC1.insecureAD.local
+| Not valid before: 2021-07-14T19:46:55
+|_Not valid after:  2022-01-13T19:46:55
+49152/tcp open  msrpc              Microsoft Windows RPC
+49153/tcp open  msrpc              Microsoft Windows RPC
+49154/tcp open  msrpc              Microsoft Windows RPC
+49155/tcp open  msrpc              Microsoft Windows RPC
+49157/tcp open  ncacn_http         Microsoft Windows RPC over HTTP 1.0
+49158/tcp open  msrpc              Microsoft Windows RPC
+49161/tcp open  msrpc              Microsoft Windows RPC
+49167/tcp open  msrpc              Microsoft Windows RPC
+Service Info: Host: DC1; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 1h45m00s, deviation: 3h30m00s, median: 0s
+|_nbstat: NetBIOS name: DC1, NetBIOS user: <unknown>, NetBIOS MAC: 00:16:3e:3d:b9:9f (Xensource)
+| smb-os-discovery: 
+|   OS: Windows Server 2012 R2 Standard Evaluation 9600 (Windows Server 2012 R2 Standard Evaluation 6.3)
+|   OS CPE: cpe:/o:microsoft:windows_server_2012::-
+|   Computer name: DC1
+|   NetBIOS computer name: DC1\x00
+|   Domain name: insecureAD.local
+|   Forest name: insecureAD.local
+|   FQDN: DC1.insecureAD.local
+|_  System time: 2021-08-02T04:49:39-07:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: required
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled and required
+| smb2-time: 
+|   date: 2021-08-02T11:49:39
+|_  start_date: 2021-08-02T11:37:13
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 83.84 seconds
