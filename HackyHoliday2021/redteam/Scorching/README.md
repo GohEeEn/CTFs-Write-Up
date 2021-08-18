@@ -53,7 +53,7 @@ Hint: the password is part of rockyou.txt.
 | --------------------- | ------------------------------------------------------------------------------------------------ |
 | `-request`            | Requests TGS (Ticket-Granting Service) for users and output them in JohnTheRipper/hashcat format |
 | `-dc-ip <IP_ADDRESS>` | IP address of the Domain Controller, ie. `10.6.0.2` here                                         |
-| <DOMAIN.FULL>         | insecureAD.local                                                                                 |
+| `<DOMAIN.FULL>`       | insecureAD.local                                                                                 |
 
 ie.  `python3 <path>/GetUserSPNs.py insecureAD.local/NAccount:<password> -dc-ip 10.6.0.2 -request`
 

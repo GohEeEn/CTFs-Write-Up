@@ -110,14 +110,13 @@ and create a reverse shell from local with `netcat`, ie. `nc -nlvp 4242`
 
 10. After several minutes, you should be able to get the following reverse shell as user `control` and get your last flag !
 
-
 ## Flags
 
 1. ctf{1337,68,61,78}
 2. ctf{we_have_lift_off}
 3. ctf{sudoToTheMoon} (help with CyptoCat's writeup)
 
-## References :
+## References
 
 - [OWASP Dirbuster on Kali](https://tools.kali.org/web-applications/dirbuster)
 - [TCP SYN scan with Nmap](https://nmap.org/book/synscan.html)

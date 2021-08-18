@@ -1,13 +1,27 @@
-# Sort by line length
-Get-Content ./dictionary | sort { $_.length }
+$answer = 
 
-# Select string that matches this regex / contains only these characters "iydhlao" for 2 letters or more
-select-string -pattern "^[IYDHLAO][iydhlao]+$"
+# Get every word from the dictionary file that
+# got sorted by length, then by ordering
+ForEach($word In $(Get-Content ./dictionary | Sort-Object {$_.Length}, {$_.ToString()})) {
+	
+	# 1st requirement : only words longer than 1 character
+	if($word.Length -gt 1) {
+		$letters = "iydhlao"
+		$match = 1
+
+		# 2nd requirement : eliminate the dict word that contains letter other than those given
+		ForEach($char in $word.ToCharArray()) {
+			if(!($letters.Contains($char))) {
+				$match = 0
+			}
+			$letters = $letters -replace $char,""
+		}
+
+		if($match) {
+			Write-Output([string]$word)
+		}
+	}
+}
 
 
-
-
-# alternative
-ForEach ($word in $_) { if($word.ToCharArray() | Group | Select Count | Where -Property Count -eq 1) Write-Output $word }
-
-$W | select-string -pattern "^[IYDHLAO][iydhlao]+$" -CaseSensitive
+$answer | check
